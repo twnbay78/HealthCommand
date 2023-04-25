@@ -6,6 +6,10 @@ logging.basicConfig(level = logging.INFO)
 logger = logging.getLogger(__name__)
 logger.setLevel('INFO')
 
+'''
+TODO:
+- Include webserver and backend server
+'''
 def lambda_handler(event, context):
     logger.info('context: {context}'.format(context = context, event = event))
     logger.info('event: {event}'.format(event = event))
